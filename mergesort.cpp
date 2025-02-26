@@ -35,9 +35,9 @@ void mergesort(int arr[],int p,int r){
     {
         int q = (p+r)/2;
         mergesort(arr,p,q);
-        cout<<"we are at "<<"p="<<p<<" q="<<q<<" r="<<r<<endl;
+        cout<<"we are at"<<" p="<<p<<" q="<<q<<" r="<<r<<endl;
         mergesort(arr,q+1,r);
-        cout<<"we are at "<<"p="<<p<<" q="<<q<<" r="<<r<<endl;
+        cout<<"we are at"<<" p="<<p<<" q="<<q<<" r="<<r<<endl;
         merge(arr,p,q,r);
     }
 }
