@@ -53,7 +53,7 @@ int main(int argc, char const *argv[])
 
     mergesort(arr, 0, arr_size - 1);
 
-    cout << "Sorted array is: ";
+    cout << "Sorted array elemets are: ";
     for (int i = 0; i < arr_size; i++)
         cout << arr[i] << " ";
     cout << endl;
