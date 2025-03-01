@@ -29,7 +29,7 @@ int main() {
     cin>>target;
     int result = binarySearch(arr, size, target);
     if (result != -1)
-        cout << "Element is present at index " << result << endl;
+        cout << "Element is present at the index " << result << endl;
     else
         cout << "Element is not present in array" << endl;
 
