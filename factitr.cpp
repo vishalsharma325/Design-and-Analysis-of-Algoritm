@@ -15,6 +15,6 @@ int main(int argc, char const *argv[])
 {int a ;
     cout<<"Enter a number :";
     cin>>a;
-   cout<<sod(a);
+   cout<<"factorial is "<<sod(a);
     return 0;
 }
