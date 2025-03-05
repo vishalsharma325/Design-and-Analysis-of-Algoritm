@@ -20,6 +20,6 @@ int main() {
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed = end - start;
 
-    std::cout << "Elapsed time: " << elapsed.count() << " seconds" << std::endl;
+    std::cout << "Elapsed time: " << elapsed.count() << "seconds" << std::endl;
     return 0;
 }
