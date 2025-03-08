@@ -16,7 +16,7 @@ int main(int argc, char const *argv[])
     cout<<"Enter the number of items: ";
     cin>>n;
     int weight[n], profit[n];
-    cout<<"Enter the weights of the items: ";
+    cout<<"Enter the weights of items: ";
     for (int i = 0; i < n; i++)
     {
         cin>>weight[i];
