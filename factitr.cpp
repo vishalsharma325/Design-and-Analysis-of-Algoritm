@@ -13,7 +13,7 @@ int sod(int n ){
 }
 int main(int argc, char const *argv[])
 {int a ;
-    cout<<"Enter a number :";
+    cout<<"Enter number :";
     cin>>a;
    cout<<"factorial is "<<sod(a);
     return 0;
