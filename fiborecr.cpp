@@ -12,7 +12,7 @@ int main() {
     cout << "Enter the number of terms: ";
     cin >> n;
 
-    cout << "Fibonacci Series: ";
+    cout << "Fibonacci Series is : ";
     for (int i = 0; i < n; i++) {
         cout << fibonacci(i) << " ";
     }
