@@ -16,7 +16,7 @@ int main() {
     cin>>arr[i];
    }
     int size = 8;
-    cout<<"enter the element to be searched :";
+    cout<<"enter the element to search :";
     int key;
     cin>>key;
     int result = linearSearch(arr, size, key);
