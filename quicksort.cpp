@@ -28,7 +28,7 @@ void quickSort(int arr[], int a, int b) {
 
 int main() {
     int n;
-    cout<<"Enter the number of elements: ";
+    cout<<"Enter the number of elements:";
     cin>>n;
     int arr[n] ;
     cout<<"Enter elements: ";
