@@ -6,7 +6,7 @@ int sod(int n ){
      if (n==0)
     {
         return 1;
-    }
+    }.
    int p = n*sod(n-1);
     return p;
     }
