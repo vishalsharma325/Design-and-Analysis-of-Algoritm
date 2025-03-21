@@ -31,7 +31,7 @@ int main() {
     if (result != -1)
         cout << "Element present at the index :" << result << endl;
     else
-        cout << "Element is not present in array " << endl;
+        cout << "Element is not present in array :" << endl;
 
     return 0;
 }
