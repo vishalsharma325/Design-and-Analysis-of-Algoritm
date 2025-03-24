@@ -10,7 +10,7 @@ int sod(int n ){
 int main(int argc, char const *argv[])
 {int a ;
     cout<<"Enter a number :";
-    cin>>a;.
+    cin>>a;
    cout<<sod(a);
     return 0;
 }
