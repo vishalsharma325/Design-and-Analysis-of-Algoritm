@@ -16,7 +16,7 @@ int binarySearch(int arr[], int size, int target) {
     }
     return -1;
 }
-..
+...
 int main() {
     int arr[8] ;
     for (int i = 0; i < 8; i++)
