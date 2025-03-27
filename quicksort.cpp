@@ -19,19 +19,19 @@ void quickSort(int arr[], int a, int b) {
         int pi = partition(arr, a, b);
         quickSort(arr, a, pi - 1);
         cout<<endl;
-        cout<<"we are at "<<"a="<<a<<" pi="<<pi<<" b="<<b<<endl;
+        cout<<"we are at "<<"a="<<a<<" b="<<pi<<" c="<<b<<endl;
         quickSort(arr, pi + 1, b);
         cout<<endl;
-        cout<<"we are at "<<"a="<<a<<" pi="<<pi<<" b="<<b<<endl;
+        cout<<"we are at "<<"a="<<a<<" b="<<pi<<" c="<<b<<endl;
     }
 }
 
 int main() {
     int n;
-    cout<<"Enter the number of elements:";
+    cout<<"Enter the number of elements: ";
     cin>>n;
     int arr[n] ;
-    cout<<"Enter elements: ";
+    cout<<"Enter the elements: ";
     for (int i = 0; i < n; i++)
     {
         cin>>arr[i];

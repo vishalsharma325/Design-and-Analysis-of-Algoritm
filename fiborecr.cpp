@@ -1,5 +1,8 @@
 #include <iostream>
+#include<chrono>
+#include<ctime>
 using namespace std;
+
 
 int fibonacci(int n) {
     if (n == 1 || n == 0)
@@ -8,15 +11,19 @@ int fibonacci(int n) {
 }
 
 int main() {
+clock_t start;
+
+
     int n;
     cout << "Enter the number of terms: ";
     cin >> n;
-
-    cout << "Fibonacci Series is : ";
+    start = clock();
+    cout << "Fibonacci Series: ";
     for (int i = 0; i < n; i++) {
         cout << fibonacci(i) << " ";
     }
     cout << endl;
-
+start=clock()-start;
+cout<<"Time taken :"<<(float)start/CLOCKS_PER_SEC<<endl;
     return 0;
 }

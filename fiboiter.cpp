@@ -1,25 +1,32 @@
 #include <iostream>
 #include <chrono>
+#include <ctime>
 using namespace std;
-int fibonacci(int n) {
-    if (n == 1 || n == 0)
-        return n;
-    return fibonacci(n - 1) + fibonacci(n - 2);
-}
 
+void fibonacci(int n) {
+    int a = 0, b = 1, c;
+    if (n >= 1) cout << a << " ";
+    if (n >= 2) cout << b << " ";
+    for (int i = 2; i < n; i++) {
+        c = a + b;
+        cout << c << " ";
+        a = b;
+        b = c;
+    }
+}
 int main() {
-    auto start = std::chrono::high_resolution_clock::now();
     int n;
-    cout << "Enter the number : ";
+    cout << "Enter the number: ";
     cin >> n;
 
-    cout << "Fibonacci Series is  : ";
-    for (int i = 0; i < n; i++) {
-        cout << fibonacci(i) << " ";
-    }
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> elapsed = end - start;
+    clock_t start;
+    start = clock();
 
-    std::cout << "Elapsed time: " << elapsed.count() << "seconds" << std::endl;
+    cout << "Fibonacci Series: ";
+    fibonacci(n);
+    cout << endl;
+
+    start = clock() - start;
+    cout << "Time taken: " << (float)start / CLOCKS_PER_SEC << " seconds" << endl;
     return 0;
 }

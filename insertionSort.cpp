@@ -27,7 +27,7 @@ int main()
 {
     srand(time(0));
     int n;
-    cout << "Enter the number of elements limit:";
+    cout << "Enter the number of elements limit: ";
     cin >> n;
     int arr[n];
     for (int i = 0; i < n; i++)
